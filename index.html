@@ -8,27 +8,28 @@
   <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-
-    <!-- PANTALLA DE INICIO -->
-    <div id="splash-screen" class="container">
-      <img src="./images/logo.png" width="500" alt="logo">
-      <button id="start-btn">Start!</button>
+  <!-- PANTALLA DE INICIO -->
+  <div id="splash-screen" class="container">
+    <img src="./images/logo.png" width="500" alt="logo">
+    <button id="start-btn">Start!</button>
+  </div>
+  
+  <!-- PANTALLA DE JUEGO -->
+  <div id="game-screen" class="container">
+    <!-- Elementos del juego como puntuación, vidas, etc deberia ir aqui (dentro del game-screen pero fuera del game-box) -->
+    <div id="game-box">
+      <!-- Los elementos del juego serán añadidos desde JS con manipulación de DOM -->
     </div>
-    
-    <!-- PANTALLA DE JUEGO -->
-    <div id="game-screen" class="container">
-      <!-- Elementos del juego como puntuación, vidas, etc deberia ir aqui (dentro del game-screen pero fuera del game-box) -->
-      <div id="game-box">
-        <!-- Los elementos del juego serán añadidos desde JS con manipulación de DOM -->
-      </div>
-    </div>
-    
-    <!-- PANTALLA FINAL -->
-    <div id="game-over-screen" class="container">
-      <img src="./images/gameover.png" width="500" alt="logo">
-    </div>
+  </div>
+  
+  <!-- PANTALLA FINAL -->
+  <div id="game-over-screen" class="container">
+    <img src="./images/gameover.png" width="500" alt="logo">
+  </div>
 
   <script src="./js/main.js"></script>
+  <script src="./js/pollito.js"></script>
+  <script src="./js/tuberia.js"></script>
 
 </body>
 </html>
